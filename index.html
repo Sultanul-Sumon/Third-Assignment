@@ -42,8 +42,11 @@
     <nav>
       <div class="navbar bg-[#FFF]">
         <div class="flex-1">
-          <div class="dropdown bg-orange-950 mr-2 rounded-md">
-            <div tabindex="0" role="button" class="btn btn-info">
+          <div class="dropdown mr-2 rounded-md">
+            <button class="btn btn-square btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+            <!-- <div tabindex="0" role="button" class="btn btn-info lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-5 w-5"
@@ -57,7 +60,7 @@
                   d="M4 6h16M4 12h8m-8 6h16"
                 />
               </svg>
-            </div>
+            </div> -->
             <ul
               tabindex="0"
               class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-slate-50 text-primary-color-btn rounded-box w-52">
@@ -71,7 +74,7 @@
           <a class="text-2xl lg:text-[#131318] font-extrabold">Hockey <span class="text-primary-color">'</span>s</a>
         </div>
         <div class="navbar-center hidden lg:flex gap-x-60">
-          <ul class="menu menu-horizontal px-1 text-[#424247]">
+          <ul class="menu menu-horizontal px-5 text-[#424247]">
             <li><a class="text-primary-color">Home</a></li>
               <li><a>About</a></li>
               <li><a>Pages</a></li>
@@ -87,18 +90,65 @@
         </div>
       </div>
     </nav>
+    <section>
+      <div class="banner-contain py-20">
+        <div class="lg:relative lg:w-[1150px] lg:h-[550px] lg:ml-20 md:container md:mx-auto">
+          <div class="carousel lg:w-full">
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="./Images/1.png" class=" w-[330pxl h-[200px] lg:w-[1150px] lg:h-[550px]" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="https://thumbs.dreamstime.com/z/low-angle-view-field-hockey-stick-ball-field-grass-deliberate-shallow-depth-field-background-copy-space-103105547.jpg?ct=jpeg" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide3" class="carousel-item relative w-full">
+              <img src="https://images.pexels.com/photos/3599596/pexels-photo-3599596.jpeg?auto=compress&cs=tinysrgb&w=600" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle">❮</a> 
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide4" class="carousel-item relative w-full">
+              <img src="./Images/1.png" class="w-[1100px]" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle">❮</a> 
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
+          <div class=" absolute top-1/2 left-1/2 origin-bottom-right p-5 bg-gray-700 w-[500px] h-[150px] ">
+            <h3 class="text-2xl text-white ">Meet all the heroes from the field</h3>
+            <p class="text-white text-lg">Join our hockey club and immerse yourself in am inspriring community where you can meet and connect wth the true heroes of the field.</p>
+          </div>
+        </div>
+        <!-- <div class=" absolute top-1/2 left-1/2 origin-bottom-right p-5 bg-gray-700 w-[500px] h-[150px] ">
+          <h3 class="text-2xl text-white ">Meet all the heroes from the field</h3>
+          <p class="text-white text-lg">Join our hockey club and immerse yourself in am inspriring community where you can meet and connect wth the true heroes of the field.</p>
+        </div> -->
+      </div>
+    </section>
   </header>
   <!-- Navbar ends -->
 
   <main>
-    <!-- Hockey club article starts here -->
+    <div class="divider border-dotted"></div>
+    <!--Professional Hockey club article starts here -->
     <article>
       <div class="text-center items-center px-2 lg:mx-32 py-32">
       <h3 class="lg:text-3xl text-secondary-color-text font-extrabold mb-6">Professional Hockeys Club</h3>
       <p>Unyielding Passion on ground, Unmatched Excellence in every Stride</p>
       </div>
       </article>
-      <!-- Hockey club article ends here -->
+      <!-- Profession Hockey club article ends here -->
+
+      <div class="divider border-dotted"></div>
 
       <!-- Progress icon and description starts here -->
     <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-10 lg:mx-32">
@@ -125,7 +175,7 @@
         </section>
         <!-- Progress icon and description ends here -->
 
-
+        <div class="divider border-dotted"></div>
 
 
         <!-- Program Section starts here -->
@@ -137,6 +187,8 @@
           </section>
           <!-- Program Section ends here -->
 
+          <div class="divider border-dotted"></div>
+
           <!-- New Products Section starts here -->
         <section>
           <div class="text-center items-center px-2 mt-10 lg:mx-32">
@@ -146,9 +198,9 @@
           </section>
           <!-- New Products Section ends here -->
 
-         
+          <div class="divider border-dotted"></div>
 
-        <!-- Get in touch section starts here -->
+         <!-- Get in touch section starts here -->
         <section>
           <div class="text-center items-center px-2 mr-10 lg:mx-32">
           <h3 class="lg:text-3xl text-secondary-color-text font-extrabold mb-6">Get in Touch</h3>
@@ -156,6 +208,8 @@
           </div>
           </section>
         <!-- get in touch section ends here -->
+
+        <div class="divider border-dotted"></div>
           
            <!-- Client Question Section Starts here -->
         <section>
@@ -164,6 +218,9 @@
           </div>
           </section>
           <!-- Client Question Section ends here -->
+
+          <div class="divider border-dotted"></div>
+
           <!-- Client FAQ Section starts here -->
         
         <section>
@@ -238,24 +295,15 @@
           <h3 class="lg:text-3xl text-secondary-color-text font-extrabold mb-6">Social Media</h3>
           <p>Subscribe to our newsletter for exclusive updates, events behind the scenes insights. Follow us on social media for the latest scores,players.</p>
           <div class="gap-6">
-          <i class="fa-brands fa-twitter mr-5"></i>
-          <i class="fa-brands fa-facebook-f mr-5"></i>
-          <i class="fa-brands fa-instagram mr-5"></i>
-          <i class="fa-brands fa-github"></i>
+          <i class="fa-brands fa-twitter mr-5 text-2xl"></i>
+          <i class="fa-brands fa-facebook-f mr-5 text-2xl"></i>
+          <i class="fa-brands fa-instagram mr-5 text-2xl"></i>
+          <i class="fa-brands fa-github text-2xl"></i>
           </div>
           </div>
           </section>
 
         <!-- Social Media Section ends here -->
-
-        
-
-
-
- 
-
-
-
 </main>
 
   <footer class="footer p-10 bg-[#131318;] text-base-content mt-10">
